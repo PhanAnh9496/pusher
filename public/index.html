@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pusher-Poll</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+</head>
+<body>
+	<div class="container">
+		<h1>OS Vote</h1>
+		<p>Bình chọn hệ điều hành yêu thích dành cho lĩnh vực phát triển ứng dụng</p>
+		<form id="vote-form">
+			<p>
+				<label for="Windows">
+					<input name="os" type="radio" id="Windows" value="Windows"/>
+					<span>Windows</span>
+				</label>
+			</p>
+			<p>
+				<label for="MacOS">
+					<input name="os" type="radio" id="MacOS" value="MacOS"/>
+					<span>MacOS</span>
+				</label>
+			</p>
+			<p>
+				<label for="Linux">
+					<input name="os" type="radio" id="Linux" value="Linux"/>
+					<span>Linux</span>
+				</label>
+			</p>
+			<p>
+				<label for="Other">
+					<input name="os" type="radio" id="Other" value="Other"/>
+					<span>Other</span>
+				</label>
+			</p>
+			<input type="submit" value="Vote" class="btn">
+		</form>
+
+		<br><br>
+		<div id="chartContainer" style="height: 300; width: 100%;">
+			
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pusher/4.2.2/pusher.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
